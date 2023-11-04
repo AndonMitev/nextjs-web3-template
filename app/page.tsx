@@ -1,5 +1,5 @@
 import ConnectWallet from '@/components/ConnectWallet';
-import NFTMetadataForm from '@/components/NFTMetadataForm';
+import { NFTMetadataForm } from '@/components/forms';
 
 export default function Home() {
   return (

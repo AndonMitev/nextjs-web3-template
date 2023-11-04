@@ -11,8 +11,8 @@ import {
   FormMessage
 } from '@/components/ui/form';
 import { useForm } from 'react-hook-form';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
 import { useAddress, useStorage } from '@thirdweb-dev/react';
 import { toast } from 'react-toastify';
 
@@ -23,7 +23,7 @@ const NFTMetadataSchema = object({
 
 type NFTMetadataDataType = Output<typeof NFTMetadataSchema>;
 
-const NFTMetadataForm = () => {
+export const NFTMetadataForm = () => {
   const address = useAddress();
   const storage = useStorage();
 
@@ -88,5 +88,3 @@ const NFTMetadataForm = () => {
     </Form>
   );
 };
-
-export default NFTMetadataForm;
