@@ -1,13 +1,13 @@
 import { ReactNode } from 'react';
-import ThirdWebProvider from './ThirdWebProvider';
+import ConnectKitProvider from './ConnectKitProvider';
 import ToastProvider from './ToastProvider';
 
 function Providers({ children }: { children: ReactNode }) {
   return (
-    <ThirdWebProvider>
+    <ConnectKitProvider>
       {children}
       <ToastProvider />
-    </ThirdWebProvider>
+    </ConnectKitProvider>
   );
 }
 
